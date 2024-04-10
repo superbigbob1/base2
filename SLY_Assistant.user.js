@@ -19,16 +19,17 @@
 	'use strict';
 
 	//Used for reading solana data
-	let customReadRPCs = [
-		'https://rpc.hellomoon.io/c7ac4aad-2ba8-4ee0-af44-eb2a08dd3801'
-	];
+	let customReadRPCs = [];
 
 	//Used for pushing transactions to solana chain
-	let customWriteRPCs = [
-		'https://rpc.hellomoon.io/c7ac4aad-2ba8-4ee0-af44-eb2a08dd3801'
-			      ];
+	let customWriteRPCs = [];
 
-    let saRPCs = [
+    let saRPCs = [ 
+	    'https://twilight-autumn-diagram.solana-mainnet.quiknode.pro/4fc53d638efd1cc0f80764bc457944bb325d1ff1', //Quicknode
+		'https://rpc.hellomoon.io/57dbc69d-7e66-4454-b33e-fa6a4b46170f', //Hello Moon
+        'https://staratl-mainc06-2415.mainnet.rpcpool.com', //Triton
+        'https://mainnet.helius-rpc.com/?api-key=735486d8-ae86-4d26-829c-e34a2210d119', //Helius
+		'https://solana-api.syndica.io/access-token/WPoEqWQ2auQQY1zHRNGJyRBkvfOLqw58FqYucdYtmy8q9Z84MBWwqtfVf8jKhcFh/rpc', //Syndica (Old)
 	];
     let readRPCs = customReadRPCs.concat(saRPCs);
     let writeRPCs = customWriteRPCs.concat(saRPCs);
